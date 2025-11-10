@@ -53,13 +53,20 @@ ID container
     margin: 0;
 }
 
+.container nav ul li:hover{
+    background-color: rgb(212, 48, 212);
+    color: white;
+
+}
 .container nav li {/*Permet d'espacer les éléments*/
     display: block;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 25px; 
-    margin-right: 50px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    padding-right: 50px;
+    border-radius: 10%;
 }
+
 
 .container h1 span::first-letter{ /*Met chaque premiere lettre de chaque mot en grand et violet*/
     font-size: xx-large;
@@ -67,7 +74,7 @@ ID container
     color: rgb(196, 37, 221);
 }
 
-.container span:hover::first-letter{ /*Met chaque premiere lettre de chaque mot en orange quand on passe la souris dessus*/
+.container h1 span:hover::first-letter{ /*Met chaque premiere lettre de chaque mot en orange quand on passe la souris dessus*/
     color: orangered;
 }
 /*
