@@ -260,7 +260,12 @@ CLASS checkbox
 .checkbox-wrapper input[type="checkbox"]:checked{ /*Le bouton deviens violet lorsqu'il est checked/coché*/
     background-color: violet;
 }
-
+.checkbox-wrapper input[type="checkbox"]:focus{ /*Le bouton deviens violet autour lorsqu'il est sélectionné*/
+    outline:2px solid rgb(113, 16, 113);
+    border-radius: auto;
+    margin:2px;
+    
+}
 .checkbox-wrapper input[type="checkbox"]:hover{
     border-color: purple;
 }
