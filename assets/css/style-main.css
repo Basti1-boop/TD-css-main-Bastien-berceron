@@ -246,6 +246,15 @@ textarea{
     outline: none;
     border-bottom: 2px solid #18e0a1;
 }
+#contact input[type="tel"]:focus { /*Style ligne de couleurs de la ligne "telephone"*/
+    outline: none;
+    border-bottom: 2px solid #18e0a1;
+}
+#contact .field:focus { /*Style ligne de couleurs qui change lorsque celle ci est activé*/
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(173, 26, 184);
+    background-color: transparent;
 
 #contact .checkbox-wrapper label {
     font-size: 12px;
