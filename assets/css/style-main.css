@@ -1,0 +1,279 @@
+
+/*
+--------------------------------------------------------------------------
+HEADER ( couleur de texte)
+---------------------------------------------------------------------------
+
+*/
+
+header,nav,a{
+    color: white;
+}
+
+/*
+--------------------------------------------------------------------------
+BODY (couleur de fond)
+---------------------------------------------------------------------------
+
+*/
+body{
+    background-color: black;
+}
+
+#intro{
+    background-image: url(../images/urban.jpg);/*Mettre l'image de fond, en fixed*/
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    
+}
+h1{
+    color: white; /*Couleur text*/
+}
+p{
+    color: white;
+    font-weight: bold;
+}
+
+/*
+-------------------
+On selectionne un enfant un par un pour changer leurs couleurs afin que ça fasse un mot de couleurs différente
+sur le titre
+-------------------
+*/
+h1 span:nth-child(1){ 
+    color: blue;
+}
+h1 span:nth-child(2){
+    color: green;
+}
+h1 span:nth-child(3){
+    color: yellow;
+}
+h1 span:nth-child(4){
+    color: orange;
+}
+h1 span:nth-child(5){
+    color: red;
+}
+/*----------------------*/
+
+nav a:hover{ /*Lorsqu'on passe la souris sur les rubriques, la couleurs de fond change*/
+    background-color: violet;
+    color: white;
+}
+h2{
+    font-weight: bolder;
+    color: gray;
+}
+/*
+---------------------------------------------------------
+CLASS photographer
+---------------------------------------------------------
+*/
+
+.photographer{
+    background-color: black;
+}
+.photographer, h3{
+    color: white;
+}
+
+.photographer figure{
+    background-color: rgb(191, 24, 191);
+    transition: filter ;/*Effet de transition*/
+}
+.photographer figure:hover{/*Donne une couleurs violette/rose clair tout en laissant l'image visible*/
+    filter:sepia(1) hue-rotate(270deg) saturate(5);
+}
+
+/*
+---------------------------------------------------------
+ID portrait
+---------------------------------------------------------
+*/
+
+#portaits{
+    margin-bottom: 0px;
+}
+
+
+#portraits .wrapper{
+    background-color: white;
+    position: static;
+}
+
+#portraits .wrapper h2{
+    color: black;
+    font-weight: bold;
+}
+
+#portraits .wrapper p { /*Definition de couleurs et d'une police spécifique au texte*/
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+#portraits .img-wrapper{ /*Mise en page de l'image portrait en fond et fixé*/
+    background-image: url(../images/portrait.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+/*
+---------------------------------------------------------
+ID outdoor
+---------------------------------------------------------
+*/
+#outdoor{ 
+    position: static;
+}
+#outdoor .wrapper h2 {
+    color: white;
+}
+#outdoor .wrapper p{ /*Definition de couleurs et d'une police spécifique au texte*/
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+#outdoor .img-wrapper{/*Mise en page de l'image outdoor en fond et fixé*/
+    background-image: url(../images/outdoor.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+/*
+---------------------------------------------------------
+Boutons
+---------------------------------------------------------
+*/
+
+.button { /*Style des boutons "voir la galerie*/
+    display: inline-block;
+    font-size: small;
+    margin-top: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight:bolder;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+#outdoor a:hover { /*Style des boutons "voir la galerie* de outdoor lorsque la souris passe dessus */
+    background-color: white;
+    color: black;
+}
+#portraits a:hover {/*Style des boutons "voir la galerie* de portrait lorsque la souris passe dessus */
+    background-color: violet;
+    color: white;
+    border: none;
+}
+
+
+.wrapper h2{
+    color: black;
+}
+
+#contact .wrapper p{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+/*
+--------------------------------------------------
+ID contact
+--------------------------------------------------
+*/
+
+
+#contact .img-wrapper{ /*Mise en page de l'image contact en fond et fixé*/
+    background-image: url(../images/contact.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+#contact{/*Couleur de fond*/
+    background-color: white;
+}
+
+#contact .wrapper p{
+    color: black;
+}
+
+
+
+#contact label { /*Style de label*/
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+#contact .field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    background-color: transparent;
+    font-size: 13px;
+    font-weight:500;
+}
+
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#contact input[type="tel"] { /*Style ligne de couleurs de la ligne "telephone"*/
+    outline: none;
+    border-bottom: 2px solid #18e0a1;
+}
+
+#contact .checkbox-wrapper label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/*
+------------------------------------------------------
+CLASS checkbox
+------------------------------------------------------
+*/
+.checkbox-wrapper input[type="checkbox"]:checked{ /*Le bouton deviens violet lorsqu'il est checked/coché*/
+    background-color: violet;
+}
+
+.checkbox-wrapper input[type="checkbox"]:hover{
+    border-color: purple;
+}
+/*Bouton envoyer du formulaire----------------------------*/
+input.button:hover{
+    background-color: violet;
+    color: white;
+    border: none;
+
+}
+/*
+-----------------------------------
+FOOTER
+-----------------------------------
+*/
+
+footer{/*Style du pied de page*/
+    background-color: rgb(194, 0, 253);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

@@ -1,0 +1,241 @@
+/*
+-------------------------------------------------
+HEADER
+-------------------------------------------------
+
+*/
+
+
+header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;/*Couleurs de fond*/
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #f7e37d; /*Donne un effet led */
+    box-shadow: 0 10px 20px #f7e37d;
+}
+
+#wrapper{/*Mise en page de l'image de fond*/
+    background-image: url(../images/urban.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+}
+/*
+-------------------------------------------------
+ID container 
+-------------------------------------------------
+*/
+
+.container nav{ /*Case du container avec bordure vertes*/
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    position: fixed;
+    top: 120px;
+    left: 50px;
+    border-radius: 10px;
+    border-right: 2px solid #64f036;
+    box-shadow: 2px 5px 20px #64f036;
+}
+.container nav ul{
+    list-style-type: none;/*Eleve les points sur les listes*/
+    padding: 0;
+    margin: 0;
+}
+
+.container nav li {/*Permet d'espacer les éléments*/
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px; 
+    margin-right: 50px;
+}
+
+.container h1 span::first-letter{ /*Met chaque premiere lettre de chaque mot en grand et violet*/
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: rgb(196, 37, 221);
+}
+
+.container span:hover::first-letter{ /*Met chaque premiere lettre de chaque mot en orange quand on passe la souris dessus*/
+    color: orangered;
+}
+/*
+----------------------------------------------------------
+Article
+----------------------------------------------------------
+*/
+article{
+    font-family: Arial, Helvetica, sans-serif;
+}
+article p::first-letter{/*Mets la premiere lettre de chaque paragraphe en orange */
+    color: orangered;
+    font-size: large;
+    font-weight: bold;
+}
+article p:nth-of-type(1):hover{/*Change la couleurs de fond du texte lorsqu'on passe la souris dessus*/
+    background-color: rgb(129, 129, 253);
+    color: white;
+}
+article p:nth-of-type(2){/*Couleur de fond de base du texte 2 */
+    background-color: rgb(217, 39, 241);
+    color: white;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-left: 10px solid #f6ed76;
+}
+article p:nth-of-type(2):hover{/*Change la couleurs de fond du texte lorsqu'on passe la souris dessus*/
+    background-color: rgb(215, 177, 38);
+    color: black;
+}
+article p:nth-of-type(3):hover{/*Change la couleurs de fond du texte lorsqu'on passe la souris dessus*/
+    background-color: rgb(129, 129, 253);
+    color: white;
+}
+article p:nth-of-type(4):hover{/*Change la couleurs de fond du texte lorsqu'on passe la souris dessus*/
+    background-color: rgb(215, 177, 38);
+    color: black;
+}
+article p:nth-of-type(5):hover{/*Change la couleurs de fond du texte lorsqu'on passe la souris dessus*/
+    background-color: rgb(129, 129, 253);
+    color: white;
+}
+article p:nth-of-type(6):hover{/*Change la couleurs de fond du texte lorsqu'on passe la souris dessus*/
+    background-color: rgb(215, 177, 38);
+    color: black;
+}
+article p:nth-of-type(7):hover{/*Change la couleurs de fond du texte lorsqu'on passe la souris dessus*/
+    background-color: rgb(129, 129, 253);
+    color: white;
+}
+article p:nth-of-type(8):hover{/*Change la couleurs de fond du texte lorsqu'on passe la souris dessus*/
+    background-color: rgb(215, 177, 38);
+    color: black;
+}
+/*
+----------
+Bouton
+----------
+*/
+
+.container button{
+    background-color: #a31aff;
+    border-radius: 20px;
+    color: white;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+}
+
+/*
+-----------------------------------------------
+CLASS auteur
+----------------------------------------------
+*/
+.auteur {/*Permet de faire une case */
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-right: 150px;
+    position: fixed;
+    top: 120px;
+    right: 50px;
+    border-radius: 10px;
+}
+
+/*
+-----------------------------------------------
+CLASS publicite
+----------------------------------------------
+*/
+.publicite {/*Permet de faire une case */
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    position: fixed;
+    top: 225px;
+    right: 50px;
+    border-radius: 10px;
+}
+
+.badge{ /*Mise en page du badge en haut de la case publicite*/
+    background-color: rgb(247, 101, 101);
+    position: fixed;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    top: 215px;
+    right: 75px;
+    font-size: small;
+    color: white;
+    font-weight: bold;
+}
+
+/*
+-----------------------------------------
+FOOTER
+-----------------------------------------
+
+*/
+
+
+footer{
+position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75px; 
+    background-color: #a31aff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    color: white; 
+}
+
+footer::before{ /*Style de la fusée*/
+    content: url(../images/rocket.svg);
+    position: absolute;
+    left: 50px; 
+    bottom: 10px; 
+    width: 50px; 
+    height: 50px;
+    background-image: url('../images/rocket.svg');
+    background-color: white;
+    background-size: cover;
+    border-radius: 50%; 
+}
+
+footer::after{ /*Style de l'ordinateur*/
+    content: url(../images/computer.svg);
+    position: absolute;
+    right: 50px; 
+    bottom: 10px; 
+    width: 50px; 
+    height: 50px;
+    background-image: url('../images/computer.svg');
+    background-color: white;
+    background-size: cover;
+    border-radius: 50%; 
+}
