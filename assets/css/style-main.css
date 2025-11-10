@@ -5,6 +5,13 @@ HEADER ( couleur de texte)
 ---------------------------------------------------------------------------
 
 */
+eader {
+  transition: background-color 2s ease; 
+}
+
+header:hover {
+  background-color: #000; /* Couleur de fond noire au survol */
+}
 
 header,nav,a{
     color: white;
